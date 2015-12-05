@@ -1,0 +1,537 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Writing definitions | Glue</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-anchors/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-prism/prism.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+        <link rel="stylesheet" href="../../docs/styles.css">
+    
+
+        
+    
+    
+    <link rel="next" href="../../docs/advanced/providers-configuration.html" />
+    
+    
+    <link rel="prev" href="../../docs/advanced/configuration-object.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.2" data-chapter-title="Writing definitions" data-filepath="docs/advanced/writing-definitions.md" data-basepath="../.." data-revision="Sat Dec 05 2015 08:51:47 GMT+0100 (CET)">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" >
+            
+            <span><b>1.</b> Basic usage</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="docs/basic/packages-based-applications.html">
+            
+                
+                    <a href="../../docs/basic/packages-based-applications.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        Packages-based applications
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="docs/basic/getting-started.html">
+            
+                
+                    <a href="../../docs/basic/getting-started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="docs/basic/routing.html">
+            
+                
+                    <a href="../../docs/basic/routing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        Routing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="docs/basic/command-line.html">
+            
+                
+                    <a href="../../docs/basic/command-line.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        Command line
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" >
+            
+            <span><b>2.</b> Advanced usage</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="docs/advanced/configuration-object.html">
+            
+                
+                    <a href="../../docs/advanced/configuration-object.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        The Configuration object
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="docs/advanced/writing-definitions.html">
+            
+                
+                    <a href="../../docs/advanced/writing-definitions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        Writing definitions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="docs/advanced/providers-configuration.html">
+            
+                
+                    <a href="../../docs/advanced/providers-configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        Providers configuration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="docs/advanced/swapping-middlewares-handler.html">
+            
+                
+                    <a href="../../docs/advanced/swapping-middlewares-handler.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Swapping middlewares handler
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" >
+            
+            <span><b>3.</b> Other informations</span>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="CHANGELOG.html">
+            
+                
+                    <a href="../../CHANGELOG.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Changelog
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="CONTRIBUTING.html">
+            
+                
+                    <a href="../../CONTRIBUTING.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        Contributing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="CONDUCT.html">
+            
+                
+                    <a href="../../CONDUCT.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        Code of conduct
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="LICENSE.html">
+            
+                
+                    <a href="../../LICENSE.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        License
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+    <a href="../../GLOSSARY.html" class="btn pull-left" aria-label="Glossary"><i class="fa fa-sort-alpha-asc"></i></a>
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../" >Glue</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="writing-definitions"><a name="writing-definitions" class="plugin-anchor" href="#writing-definitions"><span class="fa fa-link"></span></a>Writing definitions</h1>
+<p>Writing definitions can be daunting but it&apos;s a lot easier than you might think. First of all you need to create a class implementing the <code>DefinitionProviderInterface</code>. It only needs to have one method called <code>getDefinitions</code> that returns an array of definitions:</p>
+<pre><code class="lang-php"><span class="token keyword">class</span> <span class="token class-name">MyProvider</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getDefinitions<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+           <span class="token comment" spellcheck="true"> // Your definitions go here
+</span>        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>This array is an associative array where the value is what will be bound on the container, and the key what it will be bound as.</p>
+<p>Per example using the most basic definition, the <code>ParameterDefinition</code> which is just a wrapper for &quot;any value&quot;, this provider:</p>
+<pre><code class="lang-php"><span class="token keyword">class</span> <span class="token class-name">MyProvider</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getDefinitions<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            <span class="token string">&apos;foo&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">new</span> <span class="token class-name">ParameterDefinition</span><span class="token punctuation">(</span><span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>Would bind the string <code>bar</code> under the key <code>foo</code> in the container.</p>
+<h2 id="objects"><a name="objects" class="plugin-anchor" href="#objects"><span class="fa fa-link"></span></a>Objects</h2>
+<p>The most common type of things you&apos;ll want to define are objects: services, instances, etc.
+There are two classes you&apos;ll want to use for this: the <code>ObjectDefinition</code> and the <code>FactoryCallDefinition</code>.</p>
+<p>The former just defines how to create an object, you say what class you want to create, its arguments, and possible methods to call on it:</p>
+<pre><code class="lang-php"><span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setConstructorArguments<span class="token punctuation">(</span></span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMethodCall<span class="token punctuation">(</span></span><span class="token string">&apos;setLogger&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Logger</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">
+// You can also use the second argument of ObjectDefinition to pass constructor arguments
+</span><span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>If any of these arguments need to be something already in the container, you can use the <code>Reference</code> class for this, which will retrieve the object from the container before using it.
+Per example if we wanted to call the <code>setLogger</code> method of our object with whatever is bound to <code>LoggerInterface</code> on the container, we&apos;d do this:</p>
+<pre><code class="lang-php"><span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setConstructorArguments<span class="token punctuation">(</span></span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMethodCall<span class="token punctuation">(</span></span><span class="token string">&apos;setLogger&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Reference</span><span class="token punctuation">(</span>LoggerInterface<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>The <code>FactoryCallDefinition</code> works differently in the sense that you call a callable that will return your instance, already prepared:</p>
+<pre><code class="lang-php"><span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FactoryCallDefinition</span><span class="token punctuation">(</span>MyFactory<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token string">&apos;theMethodToCall&apos;</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">&apos;argument1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;argument2&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">
+// Or use setArguments
+</span><span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FactoryCallDefinition</span><span class="token punctuation">(</span>MyFactory<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token string">&apos;theMethodToCall&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setArguments<span class="token punctuation">(</span></span><span class="token string">&apos;argument1&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;argument2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Per example with <code>zend/diactoros</code> to create a request this is what is done in Glue:</p>
+<pre><code class="lang-php"><span class="token variable">$request</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FactoryCallDefinition</span><span class="token punctuation">(</span>ServerRequestFactory<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">,</span> <span class="token string">&apos;fromGlobals&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Once you have your object, you simply return it in the array of your provider, its key being what it&apos;ll be bound as:</p>
+<pre><code class="lang-php"><span class="token keyword">class</span> <span class="token class-name">MyProvider</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getDefinitions<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setConstructorArguments<span class="token punctuation">(</span></span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMethodCall<span class="token punctuation">(</span></span><span class="token string">&apos;setLogger&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Reference</span><span class="token punctuation">(</span>LoggerInterface<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$object</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="aliases"><a name="aliases" class="plugin-anchor" href="#aliases"><span class="fa fa-link"></span></a>Aliases</h2>
+<p>You might also want to bind aliases on the container, for this you simply use <code>Reference</code> again and return it directly as a definition:</p>
+<pre><code class="lang-php"><span class="token keyword">class</span> <span class="token class-name">MyProvider</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getDefinitions<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setConstructorArguments<span class="token punctuation">(</span></span><span class="token string">&apos;foo&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMethodCall<span class="token punctuation">(</span></span><span class="token string">&apos;setLogger&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Reference</span><span class="token punctuation">(</span>LoggerInterface<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$object</span><span class="token punctuation">,</span>
+            <span class="token string">&apos;alias-to-some-class&apos;</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token keyword">new</span> <span class="token class-name">Reference</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="options-and-dependencies"><a name="options-and-dependencies" class="plugin-anchor" href="#options-and-dependencies"><span class="fa fa-link"></span></a>Options and dependencies</h2>
+<p>If you need to make your definition configurable, as it is at its core a plain class, you can add any constructor arguments you might want need to it:</p>
+<pre><code class="lang-php"><span class="token keyword">class</span> <span class="token class-name">MyProvider</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span>
+<span class="token punctuation">{</span>
+    <span class="token keyword">protected</span> <span class="token variable">$someOption</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct<span class="token punctuation">(</span></span><span class="token variable">$someOption</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">someOption</span> <span class="token operator">=</span> <span class="token variable">$someOption</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getDefinitions<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setConstructorArguments<span class="token punctuation">(</span></span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">someOption</span><span class="token punctuation">,</span> <span class="token string">&apos;bar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMethodCall<span class="token punctuation">(</span></span><span class="token string">&apos;setLogger&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Reference</span><span class="token punctuation">(</span>LoggerInterface<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> <span class="token punctuation">[</span>
+            SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$object</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>If you need to retrieve something from the container and you <em>absolutely can&apos;t</em> use references for it, you can also make your provider implement the <code>ContainerAwareInterface</code> and the relevant trait.
+The container will then automatically be available in your provider within Glue as <code>$this-&gt;container</code>:</p>
+<pre><code class="lang-php"> <span class="token keyword">use</span> <span class="token package">League<span class="token punctuation">\</span>Container<span class="token punctuation">\</span>ContainerAwareInterface</span><span class="token punctuation">;</span>
+ <span class="token keyword">use</span> <span class="token package">League<span class="token punctuation">\</span>Container<span class="token punctuation">\</span>ContainerAwareTrait</span><span class="token punctuation">;</span>
+
+ <span class="token keyword">class</span> <span class="token class-name">MyProvider</span> <span class="token keyword">implements</span> <span class="token class-name">DefinitionProviderInterface</span><span class="token punctuation">,</span> ContainerAwareInterface
+ <span class="token punctuation">{</span>
+     <span class="token keyword">use</span> <span class="token package">ContainerAwareTrait</span><span class="token punctuation">;</span>
+
+     <span class="token keyword">protected</span> <span class="token variable">$someOption</span><span class="token punctuation">;</span>
+
+     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">__construct<span class="token punctuation">(</span></span><span class="token variable">$someOption</span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+         <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">someOption</span> <span class="token operator">=</span> <span class="token variable">$someOption</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+
+     <span class="token keyword">public</span> <span class="token keyword">function</span> <span class="token function">getDefinitions<span class="token punctuation">(</span></span><span class="token punctuation">)</span>
+     <span class="token punctuation">{</span>
+         <span class="token variable">$something</span> <span class="token operator">=</span> <span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">container</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">get<span class="token punctuation">(</span></span><span class="token string">&apos;something&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token variable">$thing</span> <span class="token operator">=</span> <span class="token variable">$something</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">getOtherThing<span class="token punctuation">(</span></span><span class="token string">&apos;foobar&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token variable">$object</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ObjectDefinition</span><span class="token punctuation">(</span>SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">setConstructorArguments<span class="token punctuation">(</span></span><span class="token variable">$this</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token property">someOption</span><span class="token punctuation">,</span> <span class="token variable">$thing</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+         <span class="token variable">$object</span><span class="token operator">-</span><span class="token operator">&gt;</span><span class="token function">addMethodCall<span class="token punctuation">(</span></span><span class="token string">&apos;setLogger&apos;</span><span class="token punctuation">,</span> <span class="token keyword">new</span> <span class="token class-name">Reference</span><span class="token punctuation">(</span>LoggerInterface<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token keyword">return</span> <span class="token punctuation">[</span>
+             SomeClass<span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token keyword">class</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token variable">$object</span><span class="token punctuation">,</span>
+         <span class="token punctuation">]</span><span class="token punctuation">;</span>
+     <span class="token punctuation">}</span>
+ <span class="token punctuation">}</span>
+</code></pre>
+<p>Keep in mind however this can be a <em>very dangerous practice</em> if you don&apos;t know what you&apos;re doing because your provider then needs to be registered <em>after</em> whatever provider defines <code>something</code>. Only use it in last resort.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../../docs/advanced/configuration-object.html" class="navigation navigation-prev " aria-label="Previous page: The Configuration object"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../../docs/advanced/providers-configuration.html" class="navigation navigation-next " aria-label="Next page: Providers configuration"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../../gitbook/app.js"></script>
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-ungrey/ungrey.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/madewithlove/glue/tree/master","label":"Edit This Page"},"github":{"url":"https://github.com/madewithlove/glue"},"anchors":{},"prism":{},"ungrey":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
